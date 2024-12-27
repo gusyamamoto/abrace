@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying all pages
  *
@@ -15,34 +16,33 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<?php
+	while (have_posts()) :
+		the_post();
 
-			// get_template_part( 'template-parts/content', 'page' );
+		// get_template_part( 'template-parts/content', 'page' );
 
-			?>
-				<header>
-					<h1>Qualidade é mais do que um diferencial.</br>É uma necessidade.</h1>
-					<?php get_template_part('template-parts/content', 'button-orc')?>
-				</header>
-				
-				<section id="servicos">
-					<h2>Nossos Serviços</h2>
-					<?php get_template_part('template-parts/content', 'servicos')?>
-				</section>
+	?>
+		<header>
+			<h1>Qualidade é mais do que um diferencial.</br>É uma necessidade.</h1>
+			<?php get_template_part('template-parts/content', 'button-orc') ?>
+		</header>
 
-				<section id="parceiros">
+		<section id="servicos">
+			<?php get_template_part('template-parts/content', 'servicos') ?>
+		</section>
 
-				</section>
-			<?php
+		<section id="parceiros">
+			<?php get_template_part('template-parts/content', 'parceiros') ?>
+		</section>
+	<?php
 
-		endwhile; // End of the loop.
-		?>
+	endwhile; // End of the loop.
+	?>
 
-	</main><!-- #main -->
+</main><!-- #main -->
 
 <?php
 get_footer();
