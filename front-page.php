@@ -35,7 +35,10 @@ get_header();
 		</section>
 
 		<section id="parceiros">
-			<?php get_template_part('template-parts/content', 'parceiros') ?>
+			<?php 
+			get_template_part('template-parts/content', 'parceiros');
+			get_template_part('template-parts/content', 'button-orc');
+			?>
 		</section>
 	<?php
 

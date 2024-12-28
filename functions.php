@@ -138,6 +138,13 @@ add_action( 'widgets_init', 'abrace_theme_widgets_init' );
  * Enqueue scripts and styles.
  */
 function abrace_theme_scripts() {
+	wp_enqueue_style( 
+		'abrace_theme-googlefonts',
+		'https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet',
+		array(),
+		null
+	);
+
 	wp_enqueue_style( 'abrace-theme-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'abrace-theme-style', 'rtl', 'replace' );
 
