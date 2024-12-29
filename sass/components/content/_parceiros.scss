@@ -1,0 +1,42 @@
+#parceiros {
+    background-color: $color_white;
+
+    h2 {
+        font-size: 2rem;
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+
+    .logo-parceiros-carousel-wrapper {
+        overflow: hidden;
+        /* Hide overflow to create a clean carousel effect */
+        position: relative;
+        width: 100%;
+    }
+
+    .logo-parceiros-carousel {
+        display: flex;
+        gap: 3rem;
+        animation: scroll-carousel 20s linear infinite;
+        will-change: transform;
+    }
+
+    .carousel-item {
+        flex-shrink: 0;
+        width: 150px;
+    }
+    .carousel-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    @keyframes scroll-carousel {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+}

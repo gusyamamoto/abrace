@@ -3,14 +3,18 @@
 // Check if the gallery field has images
 $gallery = get_field('logo_parceiros'); // Replace with your field name
 if ($gallery): ?>
-    <div class="logo-parceiros-gallery">
-        <?php foreach ($gallery as $image): ?>
-            <div class="gallery-item">
-                <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
-                <?php if (!empty($image['caption'])): ?>
-                    <p class="gallery-caption"><?php echo esc_html($image['caption']); ?></p>
-                <?php endif; ?>
-            </div>
-        <?php endforeach; ?>
+    <div class="logo-parceiros-carousel-wrapper">
+        <div class="logo-parceiros-carousel">
+            <?php foreach ($gallery as $image): ?>
+                <div class="carousel-item">
+                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                </div>
+            <?php endforeach; ?>
+            <?php foreach ($gallery as $image): // Duplicate for seamless looping ?>
+                <div class="carousel-item">
+                    <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>">
+                </div>
+            <?php endforeach; ?>
+        </div>
     </div>
 <?php endif; ?>
