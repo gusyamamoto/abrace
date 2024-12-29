@@ -1,0 +1,15 @@
+#servicos {
+    background-color: $color_white;
+    border-radius: 0 150px 0 150px;
+    max-width: 80%;
+    margin: auto;
+    height: 40vh;
+}
+
+.servicos-wrapper {
+    display: flex;
+    background-color: $color_blue;
+    article {
+        // width: 10rem;
+    }
+}
