@@ -9,11 +9,12 @@
     h1 {
         margin: 0;
         text-align: left;
-        font-size: 4rem;
-        line-height: 4.1rem;
+        font-size: 4.3rem;
+        line-height: 4.3rem;
     }
     .orc-button {
-        margin-top: 3rem;
+        margin-top: 4rem;
+        margin-bottom: -1rem;
         a {
             color: $color_black;
             font-weight: 800;
@@ -25,5 +26,45 @@
     .word-blue {
         color: $color_blue;
     }
+
+    .hero-container {
+        position: relative;
+    }
+
+    .blue-dots {
+        display: grid;
+        grid-template-columns: repeat(3, 10px);
+        gap: 5px;
+        position: absolute;
+      }
+      
+      .blue-dots span {
+        width: 9px;
+        height: 9px;
+        background-color: $color_blue;
+        border-radius: 50%;
+      }
+      
+      .invisible {
+        visibility: hidden;
+      }
+      
+      /* Top-left dots */
+      .top-left {
+        top: -20px;
+        left: -80px;
+      }
+      
+      /* Bottom-right dots */
+      .bottom-right {
+        bottom: -20px;
+        right: -60px;
+      }
+      
+      .hero-section h1 {
+        font-size: 36px;
+        color: black;
+        margin: 20px 0;
+      }
 }
 
