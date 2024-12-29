@@ -25,10 +25,10 @@ get_header();
 		// get_template_part( 'template-parts/content', 'page' );
 
 	?>
-		<header>
-			<h1>Qualidade é mais do que um diferencial.</br>É uma necessidade.</h1>
+		<section id="hero">
+			<h1><span class="word-blue">Qualidade</span> é mais do que<br>um diferencial.</br>É uma <span class="word-blue">necessidade<span>.</h1>
 			<?php get_template_part('template-parts/content', 'button-orc') ?>
-		</header>
+		</section>
 
 		<section id="servicos">
 			<?php get_template_part('template-parts/content', 'servicos') ?>
