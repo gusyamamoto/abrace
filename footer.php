@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -11,24 +12,29 @@
 
 ?>
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'abrace-theme' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'abrace-theme' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'abrace-theme' ), 'abrace-theme', '<a href="https://ghyamamoto.com">Gustavo Yamamoto</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+<footer id="colophon" class="site-footer">
+	<div class="site-info">
+		<?php
+		/* translators: 1: Theme name, 2: Theme author. */
+		printf(
+			esc_html__('Design by%s%s', 'text-domain'),
+			'&nbsp;',
+			'<a href="https://ghyamamoto.com">Gustavo Yamamoto</a>'
+		);
+
+
+		?>
+		<p class="footer-direitos">
+			<?php
+			echo esc_html__('©2025 Abrace - Todos os direitos reservados', 'abrace-theme');
+			?>
+		</p>
+	</div><!-- .site-info -->
+</footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
 
 </body>
+
 </html>
