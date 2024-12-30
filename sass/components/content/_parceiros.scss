@@ -1,16 +1,24 @@
 #parceiros {
     background-color: $color_white;
     margin-top: 4rem;
+    border-radius: 70px;
     height: 18rem;
+    position: relative;
     h2 {
         font-size: 2rem;
         padding-top: 1.5rem;
         text-align: center;
     }
+    .orc-button {
+        @include orcamento-btn;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        bottom: -17px;
+    }
 
     .logo-parceiros-carousel-wrapper {
         overflow: hidden;
-        /* Hide overflow to create a clean carousel effect */
         position: relative;
         width: 100%;
     }

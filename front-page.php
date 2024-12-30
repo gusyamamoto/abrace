@@ -31,6 +31,8 @@ get_header();
 				<h1><span class="word-blue">Qualidade</span> é mais do que<br>um diferencial.</br>É uma <span class="word-blue">necessidade<span>.</h1>
 			</div>
 			<?php get_template_part('template-parts/content', 'button-orc') ?>
+			
+
 		</section>
 
 		<section id="servicos">
@@ -38,9 +40,9 @@ get_header();
 		</section>
 
 		<section id="parceiros">
-			<?php 
+			<?php
 			get_template_part('template-parts/content', 'parceiros');
-			get_template_part('template-parts/content', 'button-orc');
+			// get_template_part('template-parts/content', 'button-orc');
 			?>
 		</section>
 	<?php
